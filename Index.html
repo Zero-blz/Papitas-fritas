@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudas Irrelevantes - Foro</title>
+    <meta name="description" content="Foro Dudas Irrelevantes - Un lugar para compartir y reír con comentarios graciosos.">
+    <meta name="keywords" content="foro, dudas, comentarios, diversión">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo" id="logo" />
+        <h1>Dudas Irrelevantes</h1>
+        <nav>
+            <ul>
+                <li><a href="#info">Información</a></li>
+                <li><a href="#help">Ayuda</a></li>
+                <li><a href="#comments-section">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="info" class="hidden">
+            <h2>Información de la Página</h2>
+            <p>Este foro está diseñado para compartir dudas irrelevantes y divertidas. ¡Aquí puedes dejar tus comentarios y reírte con nosotros!</p>
+        </section>
+
+        <section id="help" class="hidden">
+            <h2>Ayuda al Usuario</h2>
+            <p>Si tienes dudas sobre cómo usar esta página, no dudes en preguntar. ¡Estamos aquí para ayudar!</p>
+        </section>
+
+        <section id="comments-section">
+            <h2>Comentarios Graciosos</h2>
+            <div>
+                <input type="text" id="username" placeholder="Crea tu nombre de usuario..." />
+                <button id="register-button">Registrar</button>
+            </div>
+            <div id="comment-area" style="display: none;">
+                <textarea id="comment-input" placeholder="Escribe tu comentario aquí..."></textarea>
+                <button id="submit-comment">Enviar Comentario</button>
+                <div id="comments-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dudas Irrelevantes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
